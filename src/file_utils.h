@@ -1,8 +1,5 @@
-#ifndef FILE_UTILS_H
-#define FILE_UTILS_H
+#pragma once
 
 #include <string>
 
 std::string read_file(const std::string& path);
-
-#endif

@@ -1,5 +1,4 @@
-#ifndef PARSE_H
-#define PARSE_H
+#pragma once
 
 #include <string>
 #include <vector>
@@ -11,5 +10,3 @@ struct ImportEntry {
 };
 
 std::vector<ImportEntry> parseImports(const std::string &code);
-
-#endif

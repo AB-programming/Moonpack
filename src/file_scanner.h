@@ -1,5 +1,4 @@
-#ifndef FILE_SCANNER_H
-#define FILE_SCANNER_H
+#pragma once
 
 #include <filesystem>
 #include <vector>
@@ -10,5 +9,3 @@ public:
         const std::filesystem::path& root
     ) const;
 };
-
-#endif
