@@ -11,4 +11,5 @@ add_executable(Moonpack
         src/module.cpp
         src/parse.cpp
         src/file_utils.cpp
+        src/lexer/lexer.cpp
 )
