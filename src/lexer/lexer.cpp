@@ -114,16 +114,28 @@ std::vector<Token> Lexer::tokenize() {
                 break;
             case '}':
                 type = TokenType::RightBrace;
+                break;
             case '[':
                 type = TokenType::LeftBracket;
+                break;
             case ']':
                 type = TokenType::RightBracket;
+                break;
             case '=':
             case '+':
             case '-':
             case '*':
             case '/':
                 type = TokenType::Operator;
+                break;
+            case ';':
+                type = TokenType::Semicolon;
+                break;
+            case ',':
+                type = TokenType::Comma;
+                break;
+            case '.':
+                type = TokenType::Dot;
                 break;
             default:
                 break;
