@@ -75,4 +75,14 @@ struct ASTNode {
 
 struct FunctionDeclaration : ASTNode {
     std::string name;
+    std::vector<std::string> params;
+    std::vector<ASTNode *> body;
+
+    FunctionDeclaration() : ASTNode(NodeType::FunctionDeclaration) {}
+};
+
+struct Program : ASTNode {
+    std::vector<ASTNode *> body;
+
+    Program() : ASTNode(NodeType::Program) {}
 };

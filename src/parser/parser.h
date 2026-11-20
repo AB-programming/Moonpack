@@ -20,5 +20,9 @@ private:
 public:
     explicit Parser(std::vector<Token> t) : tokens(std::move(t)) {}
 
+    FunctionDeclaration* parseFunctionDeclaration();
+
+    ASTNode* parseStatement();
+
     std::unique_ptr<ASTNode> parseProgram();
 };
